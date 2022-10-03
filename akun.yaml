@@ -1,0 +1,14 @@
+proxies:  
+- name: Trojan GO/WS (REVERSE)
+  server: ISI_BUG_HOST/IP
+  port: 443
+  type: trojan
+  password: PASSWORD
+  network: ws
+  sni: ISI_HOST_AKUN
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /PATH
+    headers:
+        Host: ISI_HOST_AKUN
